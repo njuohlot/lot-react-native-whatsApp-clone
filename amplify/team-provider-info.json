@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-whasappclone-staging-113545-authRole",
+      "UnauthRoleArn": "arn:aws:iam::633901656765:role/amplify-whasappclone-staging-113545-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::633901656765:role/amplify-whasappclone-staging-113545-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-whasappclone-staging-113545-deployment",
+      "UnauthRoleName": "amplify-whasappclone-staging-113545-unauthRole",
+      "StackName": "amplify-whasappclone-staging-113545",
+      "StackId": "arn:aws:cloudformation:us-east-1:633901656765:stack/amplify-whasappclone-staging-113545/3afeb4c0-a549-11ed-96e0-125761266e55",
+      "AmplifyAppId": "d1k494i865l8cx"
+    },
+    "categories": {
+      "auth": {
+        "WhasAppclone": {}
+      }
+    }
+  }
+}

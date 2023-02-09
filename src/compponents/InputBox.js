@@ -1,5 +1,6 @@
-import { View, Text, StyleSheet, TextInput } from 'react-native'
+import {StyleSheet, TextInput} from 'react-native'
 import React, { useState } from 'react'
+import { SafeAreaView } from 'react-native-safe-area-context'
 import { AntDesign, MaterialIcons } from '@expo/vector-icons'
 const InputBox = () => {
 
@@ -9,11 +10,21 @@ const InputBox = () => {
     }
     const [newMessage, setNewMessage] = useState('')
   return (
-    <View style={styles.container}>
+    <SafeAreaView edges={['bottom']} style={styles.container}>
       <AntDesign size={20} name="plus" color={"royalblue"} />
-      <TextInput style={styles.input} value={newMessage} onChangeText={setNewMessage}/>
-      <MaterialIcons size={16} name="send" color={"white"} style={styles.send} onPress={onSend}/>
-    </View>
+      <TextInput
+        style={styles.input}
+        value={newMessage}
+        onChangeText={setNewMessage}
+      />
+      <MaterialIcons
+        size={16}
+        name="send"
+        color={"white"}
+        style={styles.send}
+        onPress={onSend}
+      />
+    </SafeAreaView>
   );
 }
 const styles = StyleSheet.create({
